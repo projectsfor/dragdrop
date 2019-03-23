@@ -1,0 +1,43 @@
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dropzone {
+    height: 50px;
+    /*background: dodgerblue;*/
+    /*border: 1px solid blue;*/
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#draggable {
+    background-color: cornflowerblue;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    cursor: all-scroll;
+    opacity: 0.7;
+}
+
+#draggable.active {
+    opacity: 1;
+    border-color: darkred;
+}
+.dropzone.active {
+    background: #f7ad25;
+    border-color: red;
+}
+
+.dropzone.hover {
+    background: #f74f20;
+}
+
+#draggable, .dropzone {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
